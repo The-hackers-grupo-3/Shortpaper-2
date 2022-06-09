@@ -13,11 +13,11 @@ export class DoctorService {
   ) {}
 
   async getDoctors(): Promise<DoctorEntity[]>{
-      return await this.doctorRepository.find();
+      return await this.doctorRepository.find({relations:['specialty']});
   }
 
-  async findSpecialtyDoctor(filters: FilterDoctorDto):Promise<DoctorEntity[]>{
-    return await this.doctorRepository.find({relations:['specialty'], where:filters});
-  }
+  // async findSpecialtyDoctor(filters: FilterDoctorDto):Promise<DoctorEntity[]>{
+  //   return await this.doctorRepository.find({relations:['specialty'], where:filters});
+  // }
 
 }

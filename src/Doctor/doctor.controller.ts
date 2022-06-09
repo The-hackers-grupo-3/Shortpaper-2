@@ -15,9 +15,9 @@ export class DoctorController{
         return this.doctorService.getDoctors();
     }
 
-    @Get("Specialty")
-    findSpecialty(@Body() filterSpecialty: FilterDoctorDto){
-        return this.doctorService.findSpecialtyDoctor(filterSpecialty);
-    }
+    // @Get("Specialty")
+    // findSpecialty(@Body() filterSpecialty: FilterDoctorDto){
+    //     return this.doctorService.findSpecialtyDoctor(filterSpecialty);
+    // }
 
 }

@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
-import { Body, Controller, Get} from "@nestjs/common";
+import { Controller, Get} from "@nestjs/common";
 import { DoctorService } from "./doctor.service";
-import { FilterDoctorDto } from "./DTO/filterDoctor.dto";
 
 
 
@@ -14,10 +13,4 @@ export class DoctorController{
     findAll(){
         return this.doctorService.getDoctors();
     }
-
-    // @Get("Specialty")
-    // findSpecialty(@Body() filterSpecialty: FilterDoctorDto){
-    //     return this.doctorService.findSpecialtyDoctor(filterSpecialty);
-    // }
-
 }

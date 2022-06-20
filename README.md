@@ -1,73 +1,83 @@
+# Segundo Short-paper
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Miembros 🦸‍♂️
 
-## Description
+- Arturo Lecuona [@ArtuKILL](https://github.com/ArtuKILL)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- Rabindra Harichand [@RabindraHarichand](https://github.com/RabindraHarichand)
 
-## Installation
+- Manuel De Olival [@madomss](https://github.com/madomss)
+
+- Jesús Soarez [@jesussoares](https://github.com/jesussoares)
+
+## Commits más relevantes
+
+
+| Miembro          | Tarea                            | Commit significativo                                                                                                                                | Commit HASH                                  |
+| ---------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| Manuel De Olival | Servicio de busqueda de doctores | [Servicio de buscar doctores por especialidad](https://github.com/The-hackers-grupo-3/shortpaper-2/commit/c493ca06a506e7e407dec0da2dacfddca49c4bea) | `<c493ca06a506e7e407dec0da2dacfddca49c4bea>` | 
+
+
+## Iniciar el proyecto
+
+Se debe tener [NodeJS](https://nodejs.org/es/) y [Git](https://git-scm.com/downloads).
+
+### Clonar el repo
+
+**HTTPS:**
 
 ```bash
-$ npm install
+git clone https://github.com/The-hackers-grupo-3/shortpaper-2.git
 ```
 
-## Running the app
+**SSH:**
 
 ```bash
-# development
-$ npm run start
+git clone git@github.com:The-hackers-grupo-3/shortpaper-2.git
+```
 
-# watch mode
+### Instalar herramientas
+
+- Una vez dentro de la carpeta ejecutar `npm install`
+
+- Luego ejecutar `npm run start:dev` para verificar que todo este bien.
+
+**Output:**
+
+```bash
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
+> shortpaper2@0.0.1 start:dev
+> nest start --watch
+
+[6:23:52 PM] Starting compilation in watch mode...
+
+[6:24:02 PM] Found 0 errors. Watching for file changes.
+
+[Nest] 19304  - 06/20/2022, 6:24:43 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 19304  - 06/20/2022, 6:24:44 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +890ms
+[Nest] 19304  - 06/20/2022, 6:24:44 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:44 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:44 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [InstanceLoader] TypeOrmCoreModule dependencies initialized +1402ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [InstanceLoader] DoctorModule dependencies initialized +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [InstanceLoader] SpecialtyModule dependencies initialized +8ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RoutesResolver] AppController {/}: +556ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RouterExplorer] Mapped {/, GET} route +7ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RoutesResolver] DoctorController {/Doctor}: +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RouterExplorer] Mapped {/Doctor, GET} route +2ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RoutesResolver] SpecialtyController {/Specialty}: +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RouterExplorer] Mapped {/Specialty, GET} route +1ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [RouterExplorer] Mapped {/Specialty/Doctors, GET} route +2ms
+[Nest] 19304  - 06/20/2022, 6:24:46 PM     LOG [NestApplication] Nest application successfully started +5ms
+
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
